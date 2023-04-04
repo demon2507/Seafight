@@ -4,7 +4,13 @@ plugins {
 }
 
 application {
-    mainClassName = 'minakov.code.Main'
+    mainClassName = 'minakov.code.App'
+}
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(17)
+    }
 }
 
 
